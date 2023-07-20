@@ -690,8 +690,16 @@ border-color: var(--button);
 .modal-form-comment:focus {
     border-color: var(--button);
 }
+.modal-form-list-comment {
+    margin-bottom: 16px;
+}
 /* Agreement block */
 .modal-form-agreement {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--grey);
+
 display: flex;
 align-items: center;
 margin-bottom: 24px;
@@ -706,14 +714,15 @@ background-color: var(--active );
     transform: scale(1);
 } 
 .modal-form-custom-checkbox {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center ;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: transparent;     
 }
 .modal-form-checkbox-icon {
 opacity: 0;
@@ -735,10 +744,6 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 150ms, transform 250ms cu
 .modal-form-link {
     color: var(--button);
     text-decoration: underline;
-}
-.modal-form-agreement-desc {
-    color: var(--grey);
-    user-select: none;
 }
 .modal-form-list {
     margin-bottom: 8px;
