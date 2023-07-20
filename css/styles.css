@@ -699,9 +699,11 @@ gap: 8px ;
 }
 .modal-form-checkbox:checked + .modal-form-custom-checkbox{
 border-color: var(--active);
-background-color: var(--active );
+background-color: var(--active);
+border: none;
+fill: var(--background);
 }
-.modal-form-checkbox:checked+.modal-form-custom-checkbox > .modal-form-agreement-desc {
+.modal-form-checkbox:checked+.modal-form-custom-checkbox > .modal-form-agreement {
     opacity: 1;
     transform: scale(1);
 } 
