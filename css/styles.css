@@ -443,6 +443,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     text-align: center;
 }
 /* Footer */
+.footer-btn-icon {
+    margin-left: 16px;
+}
 .footer-icons {
     display: flex;
     fill: var(--background);
@@ -505,19 +508,19 @@ margin-right: 120px;
 .footer-bottom {
     align-items: center;
     justify-content: space-between ;
-    gap: ;
 }
 .subscribe-form {
 display: flex;
-gap: ;
 }
 .subscribe-form-label {
+gap: 24px;
 
 }
 .subscribe-form-input {
 border: 1px solid rgb(255, 255, 255);
 background-color: transparent;
-padding: 8px 16px;
+padding-left: 16px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 width: 264px;
 height: 40px;
 border-radius: 4px;
@@ -526,15 +529,15 @@ letter-spacing: 0.04em;
 color: var(--white);
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 outline: transparent;
-}
-.footer-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
+line-height: 1.5;
+border-radius: 4px;
 }
 .btn-send {
-    display: block;
+    min-width: 165px;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
     align-items: center;
     justify-content: center;
     width: 165px; 
@@ -547,6 +550,11 @@ outline: transparent;
     cursor: pointer;
     border: none;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: var(--white);
 }
 .subscribe-form-input::placeholder {
     color: currentColor;
