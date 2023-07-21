@@ -767,6 +767,7 @@ margin-bottom: 24px;
 }
 .modal-form-checkbox-link {
     color: var(--button);
+    text-decoration: underline;
 }
 .modal-form-checkbox:checked + .modal-form-checkbox-label > .modal-form-checkbox-span {
 background-color: var(--active);
