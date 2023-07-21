@@ -749,8 +749,6 @@ border-color: var(--button);
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--grey);
-
-display: flex;
 align-items: center;
 margin-bottom: 24px;
 gap: 8px ;
